@@ -78,8 +78,9 @@ font-size: 14px;
 
 /* リンクのスタイル */
 a {
-color: #0055a5;
-text-decoration: none;
+    color: #0055a5;
+    text-decoration: none;
+    word-wrap: break-word;
 }
 
 a:hover {
