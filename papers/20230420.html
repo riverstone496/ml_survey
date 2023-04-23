@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Train longer, generalize better: closing the generalization gap in large batch training of neural networks
+                </li>
+                <li><strong>学会 ： </strong>Neurips</li>
+                <li><strong>出版年 ： </strong>2017</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/1705.08741">https://arxiv.org/abs/1705.08741</a></li>
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>ラージバッチでの学習の汎化性能が低いのは，更新回数が少ないことが原因であるとする．</li>
+                <li>重みベクトルを，loss landscape上をランダムフォークする粒子としてみなすことで，初期値からの重み距離は，重み更新の回数に応じて対数的に大きくなることを示す．</li>
+                <li>更新回数を増やすことなく汎化ギャップを大幅に減少させることができる「ゴーストバッチ正規化」を提案．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
