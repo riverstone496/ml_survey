@@ -21,6 +21,7 @@ header {
 
 h1 {
     font-size: 32px;
+    margin-left: 20px;
 }
 
 nav ul {
@@ -54,14 +55,17 @@ section {
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    margin-left: 40px;
 }
 
 ul {
-    list-style: none;
+    /* list-style: none; */
+    margin-left: 80px;
 }
 
 li {
     margin-bottom: 10px;
+    padding: 3px 0;
 }
 
 footer {
