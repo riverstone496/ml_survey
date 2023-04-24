@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Omnigrok: Grokking Beyond Algorithmic Data
+                </li>
+                <li><strong>学会 ： </strong>ICLR</li>
+                <li><strong>出版年 ： </strong>2023</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2210.01117">https://arxiv.org/abs/2210.01117</a></li>
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>Grokkingが起きる原因を重みのノルムの観点から検討．loss landscapesについて新たな視点を提供している．</li>
+                <li>重みのノルムがGoldilocks zoneの外にある場合，最初にTrain Lossが小さくなり，その後正則化の効果により重みのノルムが小さくなることでTest Lossも小さくなることを示す．</li>
+                <li>重みのノルムを横軸，lossを縦軸とした時，Train LossはL字型になりTest LossはU字型になる．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
