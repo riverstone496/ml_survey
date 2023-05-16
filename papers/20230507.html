@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Noise Is Not the Main Factor Behind the Gap Between SGD and Adam on Transformers, but Sign Descent Might Be</li>
+                <li><strong>学会 ： </strong>ICLR</li>
+                <li><strong>出版年 ： </strong>2023</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2304.13960">https://arxiv.org/abs/2304.13960</a></li>
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>Adamはmomentun付きのsign descentと同様の挙動を示す．AdamがSGDよりも収束が早い理由として，このsign descentがnoiseに対してrobustであることを挙げている．</li>
+                <li>AdamのSGDに対する優位性として，勾配ノイズがHeavy-Tailedであることをあげている論文が多かった．しかしこれではBatch Sizeを大きくすることで，AdamがSGDよりも収束が早くなることを説明できていないとしている．</li>
+                <li>Sign descent descentはLarge Batch学習において活躍するが，Small Batch学習においてはあまり性能が良くない．Small BatchではSign DescentはAdamを近似しない．．</li>
+                <li>Transformerの最適化においてAdamとSGDにおいてみられるような大きな差は，CNNの最適化では現れない．この理由として，Transformerを用いたLMの最適化はクラス数が大きいことを指摘．この現象は，クラス数の大きいoverparameterized logistic regressionにおいてnormalized gradient descentが活躍することと関係があると推測している．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
