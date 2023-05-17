@@ -28,8 +28,10 @@
         <section id="paper-summary">
             <h2>論文メモ</h2>
             <ul>
-                <li>AdamWを近接点法として解釈している．</li>
-                <li>AdamWやAdaGradの収束の速さはscale不変性にあるとしている．</li>
+                <li>AdamWは近接点法の近似として解釈している．</li>
+                <li>通常の更新では0に近い勾配があるときに，重みが0から遠くに離れることがあるが，近接点法ではそのような挙動を示すことはない．そのため近接点法は重みを小さく保つのに優れている．このために近接点法は学習率へのrobust性を向上させる．</li>
+                <li>AdamWやAdaGradの収束の速さはscale不変性(勾配の成分ごとのre-scalingに対して更新が不変)にあるとしている．</li>
+                <li></li>
             </ul>
         </section>
     </main>
