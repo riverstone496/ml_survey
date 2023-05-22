@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Picking Winning Tickets Before Training by Preserving Gradient Flow</li>
+                <li><strong>学会 ： </strong>ICLR</li>
+                <li><strong>出版年 ： </strong>2020</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2002.07376">https://arxiv.org/abs/2002.07376</a></li>
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>枝刈りにおいてはその前後でモデルの勾配流を維持することが必要であると主張．そこで勾配流を用いた枝刈の指標としてGradient Signal Preservation (GraSP)を提案．</li>
+                <li>GraSPは学習の初期化の時に枝刈りを行うアルゴリズム．学習初期にのみ勾配の観察を行うことの正当性をNTKで担保している．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
