@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Why are Adaptive Methods Good for Attention Models?</li>
+                <li><strong>学会 ： </strong>NeurIPS</li>
+                <li><strong>出版年 ： </strong>2020</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/1912.03194">https://arxiv.org/abs/1912.03194</a></li>
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>Transformerの勾配ノイズはheavy-tailedな確率分布になることを指摘．これによってTransformerの学習においてAdamがSGDに比べて優位に収束が早くなっていると指摘している．</li>
+                <li>heavy-tailedな勾配ノイズを抑えるには要素ごとのGradient Clippingが有効であると指摘する．</li>
+                <li>勾配ノイズがheavy-tailedになるのは，データセットとモデルの構造の両方が原因であるとする．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
