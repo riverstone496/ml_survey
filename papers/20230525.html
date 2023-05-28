@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Are Convolutional Neural Networks or Transformers more like human vision?
+                </li>
+                <li><strong>学会 ： </strong>CogSci</li>
+                <li><strong>出版年 ： </strong>2021</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2105.07197">https://arxiv.org/abs/2105.07197</a></li>
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>ViTはCNNよりもShapeに反応しやすいと報告した論文．先行研究[Baker et al., 2018]では，CNNはShapeよりもTextureに依存している報告されていた．</li>
+                <ul>
+                    <li>ShapeとTextureが異なる物体を表すSIN datasetを用いて検証している．</li>
+                    <li>JS distanceおよびCohen’s κを用いて識別誤差を測定している．</li>
+                    <li>ViTはShapeに関するbiasを持っているという点で人間に近い．間違え方も人間と同様の間違え方をする．</li>
+                </ul>
+                <li>オブジェクトのTextureをランダムに選んだ絵画のTextureに変更すると，CNNでも人間と同様にShapeで判断するようになる．</li>
+                <ul>
+                    <li>この論文では，データ拡張を行ったデータを用いてFine-Tuningを行っている．データ拡張を行ったデータを用いると人間らしいerror consistencyは低くなるが，Shapeに関するbiasは人間に近くなる．</li>
+                </ul>
+                <li>人間はShapeやTexture以外に概念も用いて物体を認識している[Speer et al., 2017]．このような人間のerror-consistencyをTrain Lossに組み入れることで，より人間に近い方法で物体を識別するモデルを作れるかもしれない．これは今後の課題としている．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
