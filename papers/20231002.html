@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Small-scale proxies for large-scale Transformer training instabilities
+                </li>
+                <li><strong>学会 ： </strong>arxiv</li>
+                <li><strong>出版年 ： </strong>2023</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2309.14322">https://arxiv.org/abs/2309.14322</a></li>
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>大規模なTransformerの学習においては，小さなモデルの学習では発生しない学習の不安定性（loss spike）が生じるとする報告がある．この論文では小さなスケールのモデルにおいても，このloss spikeを再現できることを示している．</li>
+                <li>loss spikeの原因としては，attention layerのlogitが成長することと，対数確率からの出力層のlogitが発散することが挙げられる．この2つは小さなモデルの学習においても学習率を大きくすることで発生した．</li>
+                <li>Loss spikeの挙動は，Edge of stabilityおよびSelf stabilizationにおいて示唆される挙動と一致する点が多い．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
