@@ -21,9 +21,16 @@
             <ul>
                 <li><strong>タイトル ： </strong>Scaling Forward Gradient With Local Losses
                 </li>
+                <li><strong>著者 ： </strong>Mengye Ren, Simon Kornblith, Renjie Liao, Geoffrey Hinton</li>
                 <li><strong>学会 ： </strong>ICLR</li>
                 <li><strong>出版年 ： </strong>2023</li>
                 <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2210.03310">https://arxiv.org/abs/2210.03310</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                フォワード勾配学習は,ノイズのある方向勾配を計算し,ディープニューラルネットワークの学習のためのバックプロパゲーションに対する生物学的に妥当な代替手段です.しかし,標準的なフォワード勾配アルゴリズムを単純に適用すると,学習するパラメータの数が多い場合に高いバリアンスが生じる問題があります.本論文では,標準的なディープラーニングのベンチマークタスクにフォワード勾配学習を実用的にするための一連のアーキテクチャとアルゴリズムの変更を提案します.活性化に摂動を適用することで,フォワード勾配推定量のバリアンスを大幅に削減することが可能であることを示します.さらに,学習可能なパラメータの数が少ない多数のローカルな貪欲な損失関数を導入し,ローカル学習に適した新しいMLPMixerインスパイアードアーキテクチャ,LocalMixer,を導入することで,フォワード勾配のスケーラビリティを向上させます.私たちのアプローチは,MNISTとCIFAR-10でバックプロパゲーションに匹敵し,ImageNetで以前に提案されたバックプロパゲーションフリーのアルゴリズムを大幅に上回ります.
             </ul>
         </section>
         <section id="paper-summary">
