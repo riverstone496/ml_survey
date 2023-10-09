@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Three Mechanisms of Weight Decay Regularization
+                </li>
+                <li><strong>著者 ： </strong>Guodong Zhang, Chaoqi Wang, Bowen Xu, Roger Grosse</li>
+                <li><strong>学会 ： </strong>ICLR</li>
+                <li><strong>出版年 ： </strong>2018</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/1810.12281">https://arxiv.org/abs/1810.12281</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                Weight decayはニューラルネットワークのツールボックスの標準的なトリックの一つですが, その正則化効果の理由はよく理解されていません．そして最近の結果はL2正則化の伝統的な解釈に疑問を投げかけています. 文字通りのweight decayは, 異なる最適化手法に対してL2正則化よりも優れていることが示されています. 我々は3つの最適化アルゴリズム (SGD, Adam, K-FAC) とさまざまなネットワークアーキテクチャに対してweight decayを実験的に調査します. 我々は, 特定の最適化アルゴリズムとアーキテクチャに応じて, weight decayが正則化効果を及ぼす3つの異なるメカニズムを特定します: (1) 実効学習率を増加させる, (2) 入力-出力Jacobianノルムを近似的に正則化する, (3) 二次最適化の実効Damping係数を減少させる. 我々の結果は, ニューラルネットワークの正則化を改善する方法に洞察を提供します.
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>AdamW型のweight decayがAdam型のweight decay(L2正則化)に比べて優れている理由を考察した論文．</li>
+                <li>Damping項とWeight decayの間の関係にも注目している．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
