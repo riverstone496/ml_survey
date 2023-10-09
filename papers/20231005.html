@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Why (and When) does Local SGD Generalize Better than SGD?
+                </li>
+                <li><strong>学会 ： </strong>ICLR</li>
+                <li><strong>出版年 ： </strong>2023</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2303.01215">https://arxiv.org/abs/2303.01215</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                Local SGDは，複数のGPUが独立してSGDを実行し，モデルパラメータを定期的に平均化する，大規模訓練用の通信効率の高いSGDである．最近，Local SGDは，通信オーバヘッドを削減するだけでなく，対応するSGDよりも高いテスト精度につながることが確認されている（Lin et al.） 本稿では，確率微分方程式（SDE）近似に基づくLocal SGDが，なぜ（そしていつ）より良く汎化されるのかを理解することを目的とする．本論文の主な貢献は，(i)学習率が小さい領域におけるLocal SGDの長期的な振る舞いを捉えるSDEの導出を行い，局所最小値の多様体の近くに到達した後，ノイズが最適化の反復をどのようにドリフトさせ拡散させるかを示す，(ii)Local SGDとSGDのSDEの比較を行い，Local SGDがより強いドリフト項を誘導し，正則化の効果がより強くなることを示す， (iii)小さな学習率と十分な学習時間を持つことで，SGDよりも汎化が改善されるが，2つの条件のどちらかを外すと改善されないことを検証する経験的証拠を示す．
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>Local SGDの汎化の理由を示す．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
