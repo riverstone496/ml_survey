@@ -20,9 +20,16 @@
             <h2>論文情報</h2>
             <ul>
                 <li><strong>タイトル ： </strong>Understanding AdamW through Proximal Methods and Scale-Freeness</li>
+                <li><strong>著者 ： </strong>Zhenxun Zhuang, Mingrui Liu, Ashok Cutkosky, Francesco Orabona</li>
                 <li><strong>学会 ： </strong>TMLR</li>
                 <li><strong>出版年 ： </strong>2023</li>
                 <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2202.00089">https://arxiv.org/abs/2202.00089</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                Adamは, ハイパーパラメータの調整が少なく, 顕著な性能を持つため, ディープニューラルネットワークの訓練に広く採用されています. 汎化を向上させるために, Adamは通常, 二乗ℓ2正則化器 (Adam-ℓ2) と併用されます. しかし, AdamWを使用することで, Adam-ℓ2の更新ルールから正則化器の勾配を分離することで, より良い性能を得ることができます. それにもかかわらず, AdamWの利点に関する完全な説明はまだ不足しています. 本論文では, 最適化と経験的な観点からこの問題に取り組みます. まず, AdamWを, 正則化器の閉形proximalマッピングを利用する近似的なproximal勾配法として再解釈する方法を示します. これは, Adam-ℓ2のようにその勾配情報のみを利用するのではなく, 正則化器のproximalマッピングを利用するものです. 次に, AdamWとそのproximalな対応物が享受する"scale-freeness"の性質を考慮します: その更新は, 勾配の成分ごとの再スケーリングに対して不変です. ディープラーニングの実験の幅広い範囲での経験的な証拠を提供し, AdamWがAdam-ℓ2よりも優れている問題と, ネットワークの勾配が複数のスケールを示す度合いとの間に相関があることを示します. これにより, AdamWの利点がscale-freeな更新に起因する可能性があるという仮説を動機づけます.
             </ul>
         </section>
         <section id="paper-summary">
