@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Kernel and Rich Regimes in Overparametrized Models
+                </li>
+                <li><strong>著者 ： </strong>Blake Woodworth, Suriya Gunasekar, Pedro Savarese, Edward Moroshko, Itay Golan, Jason Lee, Daniel Soudry, Nathan Srebro</li>
+                <li><strong>学会 ： </strong>PMLR</li>
+                <li><strong>出版年 ： </strong>2020</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2002.09277">https://arxiv.org/abs/2002.09277</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                最近の研究では,「カーネル領域」，つまり，ネットワークが訓練中にカーネル化された線形予測器として振る舞う場合の過剰なパラメータを持つニューラルネットワークを調査しています．そのため，勾配降下法での訓練は，最小のRKHSノルム解を見つける効果があります．これは，勾配降下法が過剰にパラメータ化された多層ネットワークでRKHSノルムでない豊かな暗黙のバイアスを生み出す方法を示す他の研究と対照的です．ChizatとBachの観察に基づき，初期化のスケールが「カーネル」（別名lazy）と「豊かな」（別名active）の領域の間の遷移をどのように制御し，多層の均一モデルの一般化特性に影響するかを示します．また，初期化時に予測器がゼロでない場合のモデルの幅の興味深い役割も強調します．私たちは，カーネル領域と豊かな領域の間で興味深く意味のある遷移をすでに示しているシンプルな深さDモデルの家族に対して完全で詳細な分析を提供し，より複雑な行列因子分解モデルと多層非線形ネットワークに対してこの遷移を実証的に示します．
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>対角線形ネットワーク．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
