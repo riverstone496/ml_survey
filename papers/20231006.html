@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Deep Unlearning via Randomized Conditionally Independent Hessians
+                </li>
+                <li><strong>著者 ： </strong>Ronak Mehta, Sourav Pal, Vikas Singh, Sathya N. Ravi</li>
+                <li><strong>学会 ： </strong>CVPR</li>
+                <li><strong>出版年 ： </strong>2022</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2204.07655">https://arxiv.org/abs/2204.07655</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                最近の法律制定により,マシンアンラーニング,すなわち,特定のトレーニングサンプルを予測モデルから削除し,それらがトレーニングデータセットに存在しなかったかのようにすることに関心が高まっています.アンラーニングは,破損した/敵対的なデータや単にユーザーの更新されたプライバシー要件のためにも必要とされることがあります.トレーニングが不要なモデル(k-NN)の場合,最も近いオリジナルサンプルを単純に削除することが効果的です.しかし,このアイディアは,より豊かな表現を学習するモデルには適用できません.最近使われている手法は,損失関数のヘッセ行列の逆行列を使うため,モデルの次元dとともにスケールしません.私たちは,新しい条件付き独立係数の変種であるL-CODECを使用して,個々のサンプルレベルで最もセマンティックなオーバーラップを持つモデルパラメータのサブセットを識別します.私たちのアプローチは,（おそらく）巨大な行列を反転する必要を完全に回避します.マルコフブランケット選択を利用することで,L-CODECはディープアンラーニング,およびビジョンの他のアプリケーションにも適していると前提としています.代替手段と比較して,L-CODECは,顔認識,人物再識別,および除外のために識別されたサンプルのアンラーニングが必要なNLPモデルを使用するビジョンモデルを含む,この手法を利用しなければ実行不可能な設定での近似アンラーニングを可能にします.
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>Unlearningに関する論文．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
