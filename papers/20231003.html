@@ -21,9 +21,17 @@
             <ul>
                 <li><strong>タイトル ： </strong>Adaptive Gradient Methods at the Edge of Stability
                 </li>
+                <li><strong>著者 ： </strong>Jeremy M. Cohen, Behrooz Ghorbani, Shankar Krishnan, Naman Agarwal, Sourabh Medapati, Michal Badura, Daniel Suo, David Cardoze, Zachary Nado, George E. Dahl, Justin Gilmer
+                </li>
                 <li><strong>学会 ： </strong>arxiv</li>
                 <li><strong>出版年 ： </strong>2022</li>
                 <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2207.14484">https://arxiv.org/abs/2207.14484</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                ディープラーニングにおけるAdamのような適応的勾配法の学習ダイナミクスについては，ほとんど知られていません．本論文では，フルバッチおよび十分に大きなバッチの設定でこれらのアルゴリズムの振る舞いに焦点を当てます．具体的には，フルバッチ学習中に，Preconditionerされたヘッシアンの最大固有値が通常，勾配降下アルゴリズムの安定性しきい値である特定の数値に均衡することを経験的に示します．ステップサイズηとβ1=0.9のAdamの場合，この安定性しきい値は38/ηです．ミニバッチ学習中にも同様の効果が現れ，特にバッチサイズが大きくなるとその効果が顕著になります．しかし，適応的方法が「Adaptive Edge of Stability」（AEoS）で学習しているにもかかわらず，この領域での振る舞いは，EoSの非適応的方法とは大きく異なります．EoSの非適応的アルゴリズムは，loss landscapeの高曲率領域に入ることができないのに対し，AEoSの適応的勾配法は，Preconditionerを適応させることで，高曲率領域に進むことができます．私たちの発見は，コミュニティがディープラーニングにおける適応的勾配法を今後理解するための基盤として役立つでしょう．
             </ul>
         </section>
         <section id="paper-summary">

@@ -21,9 +21,16 @@
             <ul>
                 <li><strong>タイトル ： </strong>A Kernel-Based View of Language Model Fine-Tuning
                 </li>
+                <li><strong>著者 ： </strong>Sadhika Malladi, Alexander Wettig, Dingli Yu, Danqi Chen, Sanjeev Arora</li>
                 <li><strong>学会 ： </strong>ICML</li>
                 <li><strong>出版年 ： </strong>2023</li>
                 <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2210.05643">https://arxiv.org/abs/2210.05643</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                NLPタスクを解決するための標準的な方法として，特にデータが少ない状況で，事前学習された言語モデル（LM）をfinetuningすることが一般的になっています．しかし，108以上のパラメータを持つモデルを数十のトレーニングポイントでfinetuningしても過学習しない理由など，実証的な成功に対する理論的な理解はほとんどありません．私たちは，Neural Tangent Kernel（NTK） - 無限に広いネットワークの勾配降下動力学を研究するモデルとして始まったモデル - が事前学習されたLMのfinetuningをどのように説明するかを調査しています．この研究は，NTKがコンピュータビジョンタスクで良好なパフォーマンス（Wei et al., 2022）を示すことに触発されて行われました．私たちは，NTKをAdamに拡張し，Tensor Programs（Yang, 2020）を使用して，NTKの視点が事前学習された言語モデルへのfinetuningの更新をどのように説明するかの条件を特徴付けます．14のNLPタスクでの広範な実験は，私たちの理論を検証し，ダウンストリームタスクをプロンプトを通じてマスクされた単語予測問題として定式化することが，finetuning中にカーネルベースの動力学をしばしば誘発することを示しています．最後に，このカーネルの視点を使用して，パラメータ効率の良い部分空間ベースにおけるfinetuningの成功に対する説明を提案します．
             </ul>
         </section>
         <section id="paper-summary">

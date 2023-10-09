@@ -21,9 +21,17 @@
             <ul>
                 <li><strong>タイトル ： </strong>Small-scale proxies for large-scale Transformer training instabilities
                 </li>
+                <li><strong>著者 ： </strong>Mitchell Wortsman, Peter J. Liu, Lechao Xiao, Katie Everett, Alex Alemi, Ben Adlam, John D. Co-Reyes, Izzeddin Gur, Abhishek Kumar, Roman Novak, Jeffrey Pennington, Jascha Sohl-dickstein, Kelvin Xu, Jaehoon Lee, Justin Gilmer, Simon Kornblith
+                </li>
                 <li><strong>学会 ： </strong>arxiv</li>
                 <li><strong>出版年 ： </strong>2023</li>
                 <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2309.14322">https://arxiv.org/abs/2309.14322</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                大規模なTransformerベースのモデルを学習させたチームは,大規模での学習時に不安定性が報告されていますが,これは小規模で同じハイパーパラメータで学習した場合には現れませんでした.このような不安定性の原因は科学的に興味深いものの,それらを再現するために必要なリソースの量によって調査を困難にしています.本研究では,小規模での学習の安定性と不安定性を再現し,研究する方法を探求します.まず,以前の研究で述べられている学習の不安定性の2つの原因,すなわち,Attentionレイヤーのロジットの成長(Dehghani et al., 2023)と,出力ロジットが対数確率からの発散(Chowdhery et al., 2022)に焦点を当てます.スケールごとの学習率と損失の関係を測定することで,これらの不安定性は高い学習率での学習時に小さなモデルでも現れること,そして大規模なスケールで以前に使用されていた緩和策がこの領域でも同様に効果的であることを示します.これにより,他の既知の最適化手法やモデルの介入が学習率の変化に対する最終的な損失の感度にどの程度影響するかを調査することができます.このために,warm up,weight decay,およびμParam(Yang et al., 2022)などの方法を研究し,学習率の変動の桁数にわたって類似の損失を達成する小さなモデルを学習するための技術を組み合わせます.最後に,モデルの活性化と勾配の規範のスケーリングの振る舞いを調査することで,不安定性が現れる前に予測できる2つのケースを研究します.
             </ul>
         </section>
         <section id="paper-summary">
