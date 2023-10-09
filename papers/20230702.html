@@ -21,9 +21,17 @@
             <ul>
                 <li><strong>タイトル ： </strong>One Step of Gradient Descent is Provably the Optimal In-Context Learner with One Layer of Linear Self-Attention
                 </li>
+                <li><strong>著者 ： Arvind Mahankali, Tatsunori B. Hashimoto, Tengyu Ma</strong>
+                </li>
                 <li><strong>学会 ： </strong>???</li>
                 <li><strong>出版年 ： </strong>2023</li>
                 <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2307.03576">https://arxiv.org/abs/2307.03576</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                最近の研究では,コンテキスト内学習を経験的に分析し,合成的な線形回帰タスクで訓練されたトランスフォーマーが,十分な容量が与えられた場合にはリッジ回帰を実装できることが示されています[Akyürek et al., 2023].これは,ベイズ最適予測器です.一方,線形自己注意とMLP層がない1層のトランスフォーマーは,最小二乗線形回帰目的の勾配降下法(GD)の1ステップを学習することが示されています[von Oswald et al., 2022].しかし,これらの観察の背後にある理論はまだ十分に理解されていません.私たちは,合成的なノイズのある線形回帰データで訓練された,線形自己注意の1層のトランスフォーマーを理論的に研究します.まず,共変量が標準ガウス分布から抽出された場合,事前学習の損失を最小化する1層のトランスフォーマーは,最小二乗線形回帰目的のGDの1ステップを実装することを数学的に示します.次に,共変量と重みベクトルの分布を非等方ガウス分布に変更すると,学習されたアルゴリズムに大きな影響を与えることがわかりました:事前学習の損失のグローバル最小値は,現在,Preconditioned GDの1ステップを実装します.しかし,応答の分布のみが変更された場合,これは学習されたアルゴリズムに大きな影響を与えません:応答がより一般的な非線形関数の家族から来る場合でも,事前学習の損失のグローバル最小値は,最小二乗線形回帰目的のGDの1ステップを実装します.
             </ul>
         </section>
         <section id="paper-summary">
