@@ -21,9 +21,16 @@
             <ul>
                 <li><strong>タイトル ： </strong>LoCo: Local Contrastive Representation Learning
                 </li>
+                <li><strong>著者 ： </strong>Yuwen Xiong, Mengye Ren, Raquel Urtasun</li>
                 <li><strong>学会 ： </strong>Neurips</li>
                 <li><strong>出版年 ： </strong>2020</li>
                 <li><strong>論文リンク ： </strong><a href="https://proceedings.neurips.cc/paper/2020/hash/7fa215c9efebb3811a7ef58409907899-Abstract.html">https://proceedings.neurips.cc/paper/2020/hash/7fa215c9efebb3811a7ef58409907899-Abstract.html</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                ディープニューラルネットは通常,重みを学習するためにエンドツーエンドのバックプロパゲーションを実行しますが,この手順はレイヤー間での重み更新ステップに同期制約を生み出し,生物学的には考えにくいものです.教師なしのコントラスティブ表現学習の最近の進歩は,学習アルゴリズムもローカルにできるかどうか,つまり,下位のレイヤーの更新が上位のレイヤーの計算に直接依存しないかどうかという疑問を呼び起こします. Greedy InfoMaxはローカルな目的関数で各ブロックを別々に学習しますが,貪欲な目的関数や勾配の隔離のためか,教師なしの最先端のコントラスティブ学習アルゴリズムでのリードアウト精度が一貫して低下することがわかりました.本研究では,ローカルブロックを上に重ねることで,デコーダの深さを効果的に増やし,上位のブロックが下位のブロックに暗黙的にフィードバックを送ることを可能にすることを発見しました.このシンプルなデザインにより,ローカル学習とエンドツーエンドのコントラスティブ学習アルゴリズムとの間の性能ギャップが初めて縮小されました.標準的なImageNetの実験の他に,リードアウト機能を直接使用してのオブジェクト検出やインスタンスセグメンテーションなどの複雑なダウンストリームタスクの結果も示します.
             </ul>
         </section>
         <section id="paper-summary">

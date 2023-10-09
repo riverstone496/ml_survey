@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Dynamics of Learning in MLP: Natural Gradient and Singularity Revisited</li>
+                <li><strong>著者 ： </strong>Shun-ichi Amari, Tomoko Ozeki, Ryo Karakida, Yuki Yoshida, Masato Okada</li>
+                <li><strong>学会 ： </strong>Neural Computation</li>
+                <li><strong>出版年 ： </strong>2018</li>
+                <li><strong>論文リンク ： </strong><a href="https://bsi-ni.brain.riken.jp/database/file/349/349.pdf">https://bsi-ni.brain.riken.jp/database/file/349/349.pdf</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                ディープラーニングにおける教師あり学習のdynamicsは,多層パーセプトロン(MLP)のパラメータ空間で進行します.私たちは,その特異な構造と自然勾配に焦点を当てて,教師ありの確率的勾配学習の歴史を概観します.パラメータ空間には,パラメータが識別できない特異領域が含まれています.私たちの結果の一つは,基本的な特異ネットワークでの確率的勾配学習のダイナミックな振る舞いを完全に探索することです.悪い結果は,その病的な性質であり,特異領域の一部が同時にアトラクターとリパルサーとなり,Milnorアトラクターを形成することです.学習軌道はアトラクター領域に引き寄せられ,長い間その中に留まった後,リパルサー領域を通って特異領域から脱出します.これは学習におけるプラトー現象の典型的なものです.私たちは,blow-down座標を導入することで,特異領域の奇妙なトポロジーを示します.これは,自然勾配のdynamicsを分析するのに役立ちます.自然勾配のdynamicsが致命的な減速を伴わないことを確認しました.二つ目の主要な結果は良い結果です:基本的な特異ネットワークの相互作用により,アトラクター部分が消失し,Milnor型のアトラクターが消えます.これは,大規模なネットワークが特異性による深刻な致命的な減速に悩まされない理由を説明しています.最後に,計算コストが低いにもかかわらず,ユニットごとの自然勾配が学習に効果的であることを示します.
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>自然勾配</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>

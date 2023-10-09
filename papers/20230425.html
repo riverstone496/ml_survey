@@ -21,9 +21,16 @@
             <ul>
                 <li><strong>タイトル ： </strong>Towards Scaling Difference Target Propagation by Learning Backprop Targets
                 </li>
+                <li><strong>著者 ： </strong>Maxence Ernoult, Fabrice Normandin, Abhinav Moudgil, Sean Spinney, Eugene Belilovsky, Irina Rish, Blake Richards, Yoshua Bengio</li>
                 <li><strong>学会 ： </strong>ICML</li>
                 <li><strong>出版年 ： </strong>2022</li>
                 <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2201.13415">https://arxiv.org/abs/2201.13415</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                生物学的に考えられる学習アルゴリズムの開発は,脳内での学習を理解するために重要ですが,そのほとんどは実世界のタスクにスケールアップすることができず,実際の脳による学習の説明としての可能性を制限しています.そのため,強力な理論的保証を持ち,複雑なタスクでバックプロパゲーション(BP)の性能に匹敵する学習アルゴリズムを探ることが重要です.そのようなアルゴリズムの一つがDifference Target Propagation (DTP)であり,これは最近Gauss-Newton (GN) 最適化との密接な関係が確立された生物学的に考えられる学翻訳アルゴリズムです.しかし,この関係が厳密に成り立つ条件は,フィードバック経路のシナプスの重みのレイヤーごとのトレーニング(これがより生物学的に考えられる)を排除します.さらに,DTPの重みの更新と損失勾配との良好な整合性は,トレーニングされるアーキテクチャの非常に特定の条件の下でのみ緩やかに保証されます.本論文では,新しいフィードバック重みトレーニングスキームを提案し,それによりDTPがBPを近似するとともに,レイヤーごとのフィードバック重みトレーニングを理論的な保証を犠牲にすることなく復元できることを確認します.私たちの理論は実験結果で裏付けられており,CIFAR-10やImageNet 32×32でDTPによって達成された最高の性能を報告しています.
             </ul>
         </section>
         <section id="paper-summary">
