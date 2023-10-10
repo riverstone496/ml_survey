@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>FastIF: Scalable Influence Functions for Efficient Model Interpretation and Debugging
+                </li>
+                <li><strong>著者 ： </strong>Han Guo, Nazneen Fatema Rajani, Peter Hase, Mohit Bansal, Caiming Xiong</li>
+                <li><strong>学会 ： </strong>EMNLP</li>
+                <li><strong>出版年 ： </strong>2021</li>
+                <li><strong>論文リンク ： </strong><a href="https://aclanthology.org/2021.emnlp-main.808/">https://aclanthology.org/2021.emnlp-main.808/</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                Influence functionsは, テスト予測のためのトレーニングデータポイントの「影響」を近似し, 多岐にわたる応用があります. その人気にもかかわらず, その計算コストはモデルとトレーニングデータのサイズとともにうまくスケールしません. 我々はFastIFを紹介します, これは実行時間を大幅に改善するInfluence functionsへの簡単な修正のセットです. 我々はk-Nearest Neighbors (kNN) を使用して, 良い候補データポイントのサブセットに検索空間を絞り込み, 逆ヘッセ行列ベクトル積を推定する際の速度-品質のトレードオフを最もバランスよくする設定を特定し, 高速な並列バリアントを導入します. 我々の提案する方法は, 元の影響値と高く相関している一方で, 約80倍の高速化を達成します. 高速なinfluence functionsが利用可能になったことで, 4つの応用例でその有用性を示します. まず, 影響力のあるデータポイントがsimulatabilityのフレームワークを使用してテスト時の振る舞いを「説明」できるかどうかを調査します. 次に, トレーニングとテストのデータポイント間の影響の相互作用を視覚化します. 三つ目に, ある影響力のあるデータポイントでの追加のファインチューニングによりモデルの誤りを修正できることを示し, HANSデータセットで訓練されたMultiNLIモデルの精度を2.5%向上させます. 最後に, トレーニング中に見られなかったデータポイントでのファインチューニングを似たようなセットアップで実験し, HANSとANLIデータセットでそれぞれ2.8%および1.7%のモデルの精度を向上させます. 全体として, 我々の高速なinfluence functionsは大規模なモデルとデータセットに効率的に適用でき, 我々の実験はモデルの解釈とモデルの誤りの修正におけるinfluence functionsの潜在能力を示しています.
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>影響関数を計算する際に，ヘシアンの逆行列をhvpとノイマン級数経由で求めている．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>

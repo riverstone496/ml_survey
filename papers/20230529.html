@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Amortized Proximal Optimization
+                </li>
+                <li><strong>著者 ： </strong>Juhan Bae, Paul Vicol, Jeff Z. HaoChen, Roger Grosse</li>
+                <li><strong>学会 ： </strong>NeurIPS</li>
+                <li><strong>出版年 ： </strong>2022</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2203.00089">https://arxiv.org/abs/2203.00089/</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                我々は, 最適化を支配するパラメータのオンラインメタ最適化のためのフレームワークを提案します, これをAmortized Proximal Optimization (APO) と呼びます. まず, さまざまな既存のニューラルネットワークの最適化手法を, 関数空間と重み空間の両方での現在のバッチ損失と近接性項とのトレードオフとしての近似的な確率的近接点方法として解釈します. APOの背後にあるアイデアは, 更新ルールのパラメータをメタ学習することで, 近接点目的の最小化を短縮することです. APOを使用して学習率や構造化された前処理行列を適応させる方法を示します. 適切な仮定の下で, APOは自然な勾配降下やKFACのような既存の最適化手法を回復することができます. APOは計算上のオーバーヘッドが少なく, 一部の二次最適化手法に必要な行列の逆数のような高価で数値的に敏感な操作を避けることができます. 我々は, 回帰, 画像再構成, 画像分類, 自然言語翻訳タスクの学習率と構造化された前処理行列のオンライン適応のためのAPOを実験的にテストします. 実験的には, APOによって見つかった学習率のスケジュールは, 最適な固定学習率を上回り, 手動で調整された減衰スケジュールと競合するものとなっています. 構造化された前処理行列を適応させるためのAPOを使用すると, 二次方法と競合する最適化性能が得られることが一般的です. さらに, 行列の逆数がないため, 数値的な安定性があり, 低精度のトレーニングに効果的です.
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
