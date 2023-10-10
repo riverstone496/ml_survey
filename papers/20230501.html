@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ML 論文メモ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>ML 論文メモ</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="paper-info">
+            <h2>論文情報</h2>
+            <ul>
+                <li><strong>タイトル ： </strong>Catastrophic Fisher Explosion: Early Phase Fisher Matrix Impacts Generalization</li>
+                <li><strong>著者 ： </strong>Stanislaw Jastrzebski, Devansh Arpit, Oliver Astrand, Giancarlo Kerg, Huan Wang, Caiming Xiong, Richard Socher, Kyunghyun Cho, Krzysztof Geras</li>
+                <li><strong>学会 ： </strong>ICML</li>
+                <li><strong>出版年 ： </strong>2021</li>
+                <li><strong>論文リンク ： </strong><a href="https://arxiv.org/abs/2012.14193">https://arxiv.org/abs/2012.14193</a></li>
+            </ul>
+        </section>
+        <section id="paper-abstract">
+            <h2>Abstract</h2>
+            <ul>
+                ディープニューラルネットワークの訓練の初期段階は, 損失関数の局所的な曲率に劇的な影響を与えます. 例えば, 小さな学習率を使用しても, 最適化の軌道が局所的な曲率が増加する損失面の領域に向かう傾向があるため, 安定した最適化が保証されるわけではありません. この傾向が, 学習率の選択が汎化に強く影響すると広く観察される現象と関連しているかどうかを我々は問いかけます. まず, 確率的勾配降下法 (SGD) が訓練の開始からFisher Information Matrix (FIM) のトレース, すなわち局所的な曲率の尺度, を暗黙的に罰することを示します. FIMのトレースを明示的に罰することで汎化が大幅に向上することを示すことで, SGDの暗黙的な正則化項であると主張します. 最終的な汎化が悪いことは, 訓練の初期にFIMのトレースが大きな値を取得することと一致することを強調します. これを我々はcatastrophic Fisher explosionと呼びます. 最後に, FIMのトレースを罰則に加えることの正則化効果への影響に洞察を得るために, それがノイズのあるラベルを持つ例の学習速度をクリーンなラベルを持つ例よりも減少させることで記憶を制限することを示します.
+            </ul>
+        </section>
+        <section id="paper-summary">
+            <h2>論文メモ</h2>
+            <ul>
+                <li>初期の学習率を大きくすると汎化する理由について，Fisher情報行列のTraceを抑える効果があることを挙げている．</li>
+                <li>小さい学習率を用いて学習を行うとFisherのTraceが急激に大きくなり，これによって過学習が誘発されていると主張する．学習初期におけるFisherのトレースを正則化すると，学習終盤においても平坦な解に収束すると主張している．</li>
+                <li>Fisher情報行列のTraceに正則化を加えるFisher Penaltyを用いて実験している．</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ML論文メモ</p>
+    </footer>
+</body>
+</html>
